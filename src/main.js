@@ -1,10 +1,19 @@
 import Vue from 'vue'
+import BootstrapVue from "bootstrap-vue";
+import axios from "axios";
+import VueAxios from "vue-axios";
 import App from './components/App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import VueRouter from 'vue-router';
+
+import "./assets/style.scss";
 
 Vue.config.productionTip = false
+
+Vue.use(BootstrapVue);
+Vue.use(axios, VueAxios);
 
 new Vue({
   router,
